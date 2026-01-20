@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7620384101497820434
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 53227462780156752, guid: 5dd70c83fb4854ba3b7fa8cedcc4ad4a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 53227462780156752, guid: 5dd70c83fb4854ba3b7fa8cedcc4ad4a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 53227462780156752, guid: 5dd70c83fb4854ba3b7fa8cedcc4ad4a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 53227462780156752, guid: 5dd70c83fb4854ba3b7fa8cedcc4ad4a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 53227462780156752, guid: 5dd70c83fb4854ba3b7fa8cedcc4ad4a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 53227462780156752, guid: 5dd70c83fb4854ba3b7fa8cedcc4ad4a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 53227462780156752, guid: 5dd70c83fb4854ba3b7fa8cedcc4ad4a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 53227462780156752, guid: 5dd70c83fb4854ba3b7fa8cedcc4ad4a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 53227462780156752, guid: 5dd70c83fb4854ba3b7fa8cedcc4ad4a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 53227462780156752, guid: 5dd70c83fb4854ba3b7fa8cedcc4ad4a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4345107104231632124, guid: 5dd70c83fb4854ba3b7fa8cedcc4ad4a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2774331477377558931, guid: d68fa7458eb4b4b049ae1d177404cfd5, type: 3}
+    - target: {fileID: 9049235861987099316, guid: 5dd70c83fb4854ba3b7fa8cedcc4ad4a, type: 3}
+      propertyPath: m_Name
+      value: cupcake Variant 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5dd70c83fb4854ba3b7fa8cedcc4ad4a, type: 3}
