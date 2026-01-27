@@ -10,6 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 53227462780156752}
   - component: {fileID: 4345107104231632124}
+  - component: {fileID: -4011395255727471147}
+  - component: {fileID: -5259354787758994758}
+  - component: {fileID: 1966473204376549957}
   m_Layer: 0
   m_Name: cupcake
   m_TagString: Untagged
@@ -91,3 +94,141 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!50 &-4011395255727471147
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9049235861987099316}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1.25
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
+--- !u!58 &-5259354787758994758
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9049235861987099316}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 1.4799999
+--- !u!60 &1966473204376549957
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9049235861987099316}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.18, y: 2.96}
+    newSize: {x: 2.18, y: 2.96}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.95, y: -0.64}
+      - {x: 0.95, y: -0.48}
+      - {x: 0.90999997, y: -0.39}
+      - {x: 1.09, y: -0.06}
+      - {x: 1.09, y: 0.22}
+      - {x: 1, y: 0.41}
+      - {x: 0.96999997, y: 0.75}
+      - {x: 0.78, y: 1.05}
+      - {x: 0.53999996, y: 1.17}
+      - {x: 0.35, y: 1.35}
+      - {x: 0.17, y: 1.48}
+      - {x: -0.17, y: 1.48}
+      - {x: -0.26, y: 1.42}
+      - {x: -0.47, y: 1.1899999}
+      - {x: -0.65, y: 1.13}
+      - {x: -0.93, y: 0.84999996}
+      - {x: -0.96999997, y: 0.66999996}
+      - {x: -0.95, y: 0.48}
+      - {x: -1.05, y: 0.31}
+      - {x: -1.09, y: 0.21}
+      - {x: -1.09, y: -0.07}
+      - {x: -0.96999997, y: -0.31}
+      - {x: -0.95, y: -0.64}
+      - {x: -0.53999996, y: -1.48}
+      - {x: -0.12, y: -1.48}
+      - {x: 0.01, y: -1.38}
+      - {x: 0.08, y: -1.48}
+      - {x: 0.55, y: -1.48}
+  m_UseDelaunayMesh: 1
