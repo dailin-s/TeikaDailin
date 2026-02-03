@@ -54,45 +54,10 @@ PrefabInstance:
       objectReference: {fileID: -9154013356945521823, guid: d68fa7458eb4b4b049ae1d177404cfd5, type: 3}
     - target: {fileID: 9049235861987099316, guid: 5dd70c83fb4854ba3b7fa8cedcc4ad4a, type: 3}
       propertyPath: m_Name
-      value: cake
+      value: cupcake Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 9049235861987099316, guid: 5dd70c83fb4854ba3b7fa8cedcc4ad4a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: -8585559802037716114}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dd70c83fb4854ba3b7fa8cedcc4ad4a, type: 3}
---- !u!1 &7216095235575718979 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9049235861987099316, guid: 5dd70c83fb4854ba3b7fa8cedcc4ad4a, type: 3}
-  m_PrefabInstance: {fileID: 1851507693728474871}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &-8585559802037716114
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7216095235575718979}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
