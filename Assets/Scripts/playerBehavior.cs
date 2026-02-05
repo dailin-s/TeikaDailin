@@ -18,20 +18,20 @@ public class playerBehavior : MonoBehaviour
     {
 
         //dropping fruit
-       /*if (treat = null ){
+       if (treat != null ){
             Vector3 treatOffset = new Vector3(0.0f, -1.0f, 0.0f);
             treat.transform.position = gameObject.transform.position + treatOffset;
-          //  treat.GetComponent<Rigidbody2D>().gravity.Scale = 0.0f;
-            treat.GetComponent<Collider2D>.enabled = false;
+            treat.GetComponent<Rigidbody2D>().gravityScale = 0.0f;
+            treat.GetComponent<Collider2D>().enabled = false;
 
         }
 
         if (Keyboard.current.spaceKey.wasPressedThisFrame){
-            //treat.GetComponent<Rigidbody2D>().gravity.Scale = 1.0f;
+            treat.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
             treat.GetComponent<Collider2D>().enabled = true;
             treat = null;
         }
-*/
+
         //movement
         float update = 0.0f;
         if (Keyboard.current.leftArrowKey.wasPressedThisFrame) {
