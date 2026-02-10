@@ -5,7 +5,10 @@ using UnityEngine.InputSystem;
 public class playerBehavior : MonoBehaviour
 {
     public float speed;
-    public GameObject treat;
+    public GameObject[] treats;
+    public GameObject currentTreat;
+    public float min; //-2.432
+    public float max; //6.285
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -18,18 +21,21 @@ public class playerBehavior : MonoBehaviour
     {
 
         //dropping fruit
-       if (treat != null ){
+       if (currentTreat != null ) {
             Vector3 treatOffset = new Vector3(0.0f, -1.0f, 0.0f);
-            treat.transform.position = gameObject.transform.position + treatOffset;
-            treat.GetComponent<Rigidbody2D>().gravityScale = 0.0f;
-            treat.GetComponent<Collider2D>().enabled = false;
-
-        }
+            currentTreat.transform.position = gameObject.transform.position + treatOffset;
+            currentTreat.GetComponent<Rigidbody2D>().gravityScale = 0.0f;
+            //currentTreat.GetComponent<PolygonCollider2D>().enabled = false;
+            } else {
+                int index = Random.Range(0, treats.Length);
+                currentTreat = Instantiate(treats[index], transform.position, Quaternion.identity);
+            }
+        
 
         if (Keyboard.current.spaceKey.wasPressedThisFrame){
-            treat.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
-            treat.GetComponent<Collider2D>().enabled = true;
-            treat = null;
+            currentTreat.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
+            currentTreat.GetComponent<PolygonCollider2D>().enabled = true;
+            currentTreat = null;
         }
 
         //movement
@@ -44,6 +50,8 @@ public class playerBehavior : MonoBehaviour
 
         Vector3 newPosition = transform.position;
         newPosition.x = transform.position.x + update;
+        if(newPosition.x > min && newPosition.x < max){
         transform.position = newPosition;
+        }
     }
 }
