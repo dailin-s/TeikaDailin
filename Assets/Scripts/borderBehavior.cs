@@ -1,0 +1,62 @@
+using UnityEngine;
+
+public class borderBehavior : MonoBehaviour
+{
+    public float timeout;
+    public float timeStart;
+    public float timeThusFar;
+    public GameObject gameOver;
+
+
+     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+         timeStart = Time.time; //get current time
+     }
+
+     // Update is called once per frame
+     void Update()
+     {
+        
+     }
+
+     private void OnTriggerEnter2D(Collider2D other){
+         if(other.gameObject.CompareTag("Treat")){
+             timeStart = Time.time;
+         }
+     }
+
+     private void OnTriggerStay2D(Collider2D other){
+        if(other.gameObject.CompareTag("Treat")){
+            float currentTime = Time.time;
+             float timeThusFar = currentTime - timeStart;
+             if(timeThusFar > timeout){
+                gameOver.SetActive(true);
+             print("game over dude");
+             }
+         }
+    }
+}
+
+//     public void OnTriggerEnter2D(Collider2D collision){
+//         string tag = collision.gameObject.tag;
+//         Debug.Log("You've entered the trigger of: " + collision.gameObject.tag);
+//         if(collision.gameObject.CompareTag("Treat")){
+//             Debug.Log("Game over Timer started at: " + timeStart);
+//             timeStart = Time.time; //Get current Time
+//         }
+        
+//     }
+
+//     public void OnTriggerStay2D(Collider2D collision){
+//         string tag = collision.gameObject.tag;
+//         Debug.Log("Trigger stay on:" + collision.gameObject.tag);
+//         if(tag.Equals("Treat")){
+//         timeThusFar = Time.time - timeStart;
+//         Debug.Log("Game over Timer updated: " + timeThusFar);
+//         if(timeThusFar >= timeout){
+
+//             Debug.Log("Game over");
+//             }
+//         }
+//     }
