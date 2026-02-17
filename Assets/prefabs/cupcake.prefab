@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4345107104231632124}
   - component: {fileID: -4125586747137055436}
   - component: {fileID: 5899735524008108263}
+  - component: {fileID: 5600099369720126186}
   m_Layer: 0
   m_Name: cupcake
   m_TagString: Treat
@@ -127,7 +128,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9049235861987099316}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -195,3 +196,17 @@ PolygonCollider2D:
       - {x: 0.08, y: -1.48}
       - {x: 0.55, y: -1.48}
   m_UseDelaunayMesh: 1
+--- !u!114 &5600099369720126186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9049235861987099316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f3f5c18973984c0da5a218b7f584b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
+  treatType: 9
+  treats: []

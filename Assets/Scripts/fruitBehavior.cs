@@ -3,25 +3,65 @@ using UnityEngine.InputSystem;
 
 
 
-public class NewMonoBehaviourScript : MonoBehaviour{
+public class fruitBehavior : MonoBehaviour{
 
 //     public float timeout;
+    public int treatType;
+    public GameObject[] treats;
 //     public float timeStart;
 //     public float timeThusFar;
 //     public GameObject gameOver;
 
 
-//     // Start is called once before the first execution of Update after the MonoBehaviour is created
-//     void Start()
-//     {
-//         timeStart = Time.time; //get current time
-//     }
+    //Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        treats = GameObject.FindGameObjectWithTag("Player").GetComponent<playerBehavior>().treats;
+    }
 
-//     // Update is called once per frame
-//     void Update()
-//     {
+     // Update is called once per frame
+    void Update()
+     {
         
-//     }
+     }
+
+    private void OnCollisionEnter2D(Collision2D other){
+
+        if (other.gameObject.CompareTag("Treat")){
+            int otherType = other.gameObject.GetComponent<fruitBehavior>().treatType;
+            if (otherType == treatType && treatType < 9) {
+
+                if (gameObject.transform.position.x < other.transform.position.x
+                    || gameObject.transform.position.x == other.transform.position.x
+                        && gameObject.transform.position.y >= other.transform.position.y) {
+                            
+                            //create the merged one   
+
+                            int index = treatType +1;
+                            GameObject currentTreat = Instantiate(treats[index], 
+                            Vector3.Lerp(gameObject.transform.position,other.gameObject.transform.position, 0.5f), Quaternion.identity);
+                            currentTreat.GetComponent<Collider2D>().enabled = true;
+                            currentTreat.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
+
+                            //destroy both things
+
+                            Destroy(other.gameObject);
+                            Destroy(gameObject);
+
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
 
 //    /* private void OnTriggerEnter2D(Collider2D other){
 //         if(other.gameObject.CompareTag("Top")){
