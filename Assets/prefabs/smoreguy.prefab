@@ -52,9 +52,61 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -5550593049011392667, guid: d68fa7458eb4b4b049ae1d177404cfd5, type: 3}
+    - target: {fileID: 5899735524008108263, guid: 5dd70c83fb4854ba3b7fa8cedcc4ad4a, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.2199999
+      objectReference: {fileID: 0}
+    - target: {fileID: 5899735524008108263, guid: 5dd70c83fb4854ba3b7fa8cedcc4ad4a, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.2299999
+      objectReference: {fileID: 0}
+    - target: {fileID: 5899735524008108263, guid: 5dd70c83fb4854ba3b7fa8cedcc4ad4a, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5899735524008108263, guid: 5dd70c83fb4854ba3b7fa8cedcc4ad4a, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
+      value: -0.54999936
+      objectReference: {fileID: 0}
+    - target: {fileID: 5899735524008108263, guid: 5dd70c83fb4854ba3b7fa8cedcc4ad4a, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].y
+      value: 0.63250005
+      objectReference: {fileID: 0}
+    - target: {fileID: 5899735524008108263, guid: 5dd70c83fb4854ba3b7fa8cedcc4ad4a, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].x
+      value: -0.60999936
+      objectReference: {fileID: 0}
+    - target: {fileID: 5899735524008108263, guid: 5dd70c83fb4854ba3b7fa8cedcc4ad4a, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
+      value: 0.6025
+      objectReference: {fileID: 0}
+    - target: {fileID: 5899735524008108263, guid: 5dd70c83fb4854ba3b7fa8cedcc4ad4a, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].x
+      value: -0.60999936
+      objectReference: {fileID: 0}
+    - target: {fileID: 5899735524008108263, guid: 5dd70c83fb4854ba3b7fa8cedcc4ad4a, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].y
+      value: -0.6124999
+      objectReference: {fileID: 0}
+    - target: {fileID: 5899735524008108263, guid: 5dd70c83fb4854ba3b7fa8cedcc4ad4a, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].x
+      value: 0.62000054
+      objectReference: {fileID: 0}
+    - target: {fileID: 5899735524008108263, guid: 5dd70c83fb4854ba3b7fa8cedcc4ad4a, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
+      value: -0.6124999
+      objectReference: {fileID: 0}
+    - target: {fileID: 5899735524008108263, guid: 5dd70c83fb4854ba3b7fa8cedcc4ad4a, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].x
+      value: 0.62000054
+      objectReference: {fileID: 0}
+    - target: {fileID: 5899735524008108263, guid: 5dd70c83fb4854ba3b7fa8cedcc4ad4a, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].y
+      value: 0.63250005
+      objectReference: {fileID: 0}
     - target: {fileID: 9049235861987099316, guid: 5dd70c83fb4854ba3b7fa8cedcc4ad4a, type: 3}
       propertyPath: m_Name
-      value: cupcake Variant 4
+      value: smoreguy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

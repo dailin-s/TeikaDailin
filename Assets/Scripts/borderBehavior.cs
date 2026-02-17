@@ -36,6 +36,10 @@ public class borderBehavior : MonoBehaviour
              }
          }
     }
+
+    private void OnTriggerExit2D(Collider2D other){
+        
+    }
 }
 
 //     public void OnTriggerEnter2D(Collider2D collision){
