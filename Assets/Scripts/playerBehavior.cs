@@ -1,6 +1,7 @@
 //using UnityEngine.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class playerBehavior : MonoBehaviour
 {
@@ -9,11 +10,16 @@ public class playerBehavior : MonoBehaviour
     public GameObject currentTreat;
     public float min; //-2.432
     public float max; //6.285
+    public AudioSource dropSource;
+    public int [] points;
+    public int score;
+    public TMP_Text scoreText;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        dropSource = GetComponents<AudioSource>()[1];
+        score = 0;
     }
 
     // Update is called once per frame
@@ -34,6 +40,7 @@ public class playerBehavior : MonoBehaviour
 
         if (Keyboard.current.spaceKey.wasPressedThisFrame){
             currentTreat.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
+            dropSource.Play();
             currentTreat.GetComponent<PolygonCollider2D>().enabled = true;
             currentTreat = null;
         }

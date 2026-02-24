@@ -8,6 +8,7 @@ public class fruitBehavior : MonoBehaviour{
 //     public float timeout;
     public int treatType;
     public GameObject[] treats;
+    private AudioSource mergeSource;
 //     public float timeStart;
 //     public float timeThusFar;
 //     public GameObject gameOver;
@@ -16,7 +17,9 @@ public class fruitBehavior : MonoBehaviour{
     //Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        //timeStart = Time.time; //Get current time
         treats = GameObject.FindGameObjectWithTag("Player").GetComponent<playerBehavior>().treats;
+        mergeSource = GameObject.FindGameObjectWithTag("Player").GetComponents<AudioSource>()[0];
     }
 
      // Update is called once per frame
@@ -42,6 +45,9 @@ public class fruitBehavior : MonoBehaviour{
                             Vector3.Lerp(gameObject.transform.position,other.gameObject.transform.position, 0.5f), Quaternion.identity);
                             currentTreat.GetComponent<Collider2D>().enabled = true;
                             currentTreat.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
+                            mergeSource.Play();
+
+                            //GameObject.FindGameObjectWithTag("Player").GetComponent<playerBehavior>().updateScore(treatType);
 
                             //destroy both things
 
