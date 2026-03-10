@@ -11,6 +11,7 @@ public class playerBehavior : MonoBehaviour
     public float min; //-2.432
     public float max; //6.285
     public AudioSource dropSource;
+
     public int [] points;
     public int score;
     public TMP_Text scoreText;
@@ -21,6 +22,12 @@ public class playerBehavior : MonoBehaviour
         dropSource = GetComponents<AudioSource>()[1];
         score = 0;
     }
+
+    public void UpdateScore(int treatType){
+        score = score + points[treatType];
+        scoreText.text = "Score: " + score;
+    }
+
 
     // Update is called once per frame
     void Update() 

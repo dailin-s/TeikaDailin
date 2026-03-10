@@ -37,6 +37,8 @@ public class fruitBehavior : MonoBehaviour{
                 if (gameObject.transform.position.x < other.transform.position.x
                     || gameObject.transform.position.x == other.transform.position.x
                         && gameObject.transform.position.y >= other.transform.position.y) {
+
+                            GameObject.FindGameObjectWithTag("Player").GetComponent<playerBehavior>().UpdateScore(treatType);
                             
                             //create the merged one   
 
