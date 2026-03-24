@@ -11,6 +11,7 @@ public class playerBehavior : MonoBehaviour
     public float min; //-2.432
     public float max; //6.285
     public AudioSource dropSource;
+    public GameObject queue;
 
     public int [] points;
     public int score;
@@ -21,6 +22,7 @@ public class playerBehavior : MonoBehaviour
     {
         dropSource = GetComponents<AudioSource>()[1];
         score = 0;
+        queue = GameObject.FindGameObjectWithTag("Queue");
     }
 
     public void UpdateScore(int treatType){
@@ -40,6 +42,7 @@ public class playerBehavior : MonoBehaviour
             currentTreat.GetComponent<Rigidbody2D>().gravityScale = 0.0f;
             //currentTreat.GetComponent<PolygonCollider2D>().enabled = false;
             } else {
+                int choice = queue.GetComponent<QueueBehavior>().updateQueue();
                 int index = Random.Range(0, treats.Length);
                 currentTreat = Instantiate(treats[index], transform.position, Quaternion.identity);
             }
